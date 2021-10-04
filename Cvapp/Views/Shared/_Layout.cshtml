@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Burak Doğan - Cv</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/style/images/bd1.png" />
+    <link rel="stylesheet" type="text/css" href="~/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/style/color/red.css" media="all" />
+    <link rel="stylesheet" type="text/css" media="screen" href="~/style/css/prettyPhoto.css" />
+    <link rel="stylesheet" type="text/css" href="~/style/type/museo.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/style/type/ptsans.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/style/type/charis.css" media="all" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" src="~/style/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="~/style/js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="~/style/js/transify.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.aw-showcase.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="~/style/js/carousel.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.superbgimage.min.js"></script>
+    <script type="text/javascript" src="~/style/js/jquery.slickforms.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.forms').dcSlickForms();
+        });</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#showcase").awShowcase(
+                {
+                    content_width: 900,
+                    content_height: 400,
+                    auto: true,
+                    interval: 3000,
+                    continuous: false,
+                    arrows: true,
+                    buttons: true,
+                    btn_numbers: true,
+                    keybord_keys: true,
+                    mousetrace: false, /* Trace x and y coordinates for the mouse */
+                    pauseonover: true,
+                    stoponclick: false,
+                    transition: 'fade', /* hslide/vslide/fade */
+                    transition_delay: 0,
+                    transition_speed: 500,
+                    show_caption: 'onload' /* onload/onhover/show */
+                });
+        });</script>
+
+</head>
+<body>
+    <!-- Fullscreen backgrounds -->
+    <div id="thumbs">
+
+        <a href="~/style/images/art/bg4.jpg"></a>
+
+    </div>
+    <div id="superbgimage">
+        <div class="scanlines"></div>
+    </div>
+    <!-- End Fullscreen backgrounds -->
+    <!-- Begin Wrapper -->
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo opacity"><a href="/Cv/Anasayfa"><img src="~/style/images/cv-logo2.png" alt="" /></a></div>
+            <div class="social">
+                <ul>
+
+                    <li><a href="https://www.facebook.com/burak.dogan.9400"><img src="~/style/images/icon-facebook.png" alt="Facebook" /></a></li>
+
+                    <li><a href="/cv/iletisim"><img src="~/style/images/icon-googleplus.png" alt="Google+" /></a></li>
+                    <li><a href="https://www.instagram.com/burakdgann/"><img src="~/style/images/instagram-icon.png" alt="Instagram" /></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- Begin Menu -->
+        <div id="menu" class="menu opacity">
+            <ul>
+                <li><a href="/Cv/Anasayfa">Hakkımda</a></li>
+                <li>
+                    <a href="/Cv/egitim">Eğitim</a>
+                    <ul>
+                        <li><a href="/Cv/egitimseviyesi">Yazılım Dilleri</a></li>
+                        <li><a href="/Cv/yabancidil">Yabancı Dil</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Cv/projeler">Kariyer</a></li>
+
+                <li><a href="/Cv/iletisim">İletişim</a></li>
+
+                <li><a href="/Cv/hobiler">Hobiler</a></li>
+
+
+            </ul>
+            <br style="clear: left" />
+        </div>
+        <!-- End Menu -->
+        <!-- Begin Container -->
+        <div id="container" class="opacity">
+            @RenderBody()
+
+
+
+            <!-- End Showcase -->
+            <!-- Divider -->
+            <!-- Begin Top Columns -->
+            <!-- End Top Columns -->
+            <!-- Begin 4 Columns -->
+            <!-- Divider -->
+            <!-- Begin Latest Works -->
+            <!-- End Latest Works -->
+        </div>
+        <div id="footer">
+            <div class="footer-top"></div>
+            <!-- Divider -->
+
+
+            <div class="one-fourth" style="width:40%;">
+                <h3>Hakkında</h3>
+                <p>Bu site 01/10/2021 tarihinde kişisel cv mi oluşturmak ve bundan sonrası için referans olması adına yapılmıştır.</p> <br />
+
+            </div>
+            <div class="one-fourth last" style="width:40%;">
+                <h3>İleti</h3>
+                <!-- Form -->
+                <div class="form-container">
+                    <form class="forms" action="contact/form-handler.php" method="post">
+                        <fieldset>
+                            <ol>
+                                <li class="form-row text-input-row">
+                                    <label>İsim*</label>
+                                    <input type="text" name="name" value="" class="text-input required" title="" />
+                                </li>
+                                <li class="form-row text-input-row">
+                                    <label>Email*</label>
+                                    <input type="text" name="email" value="" class="text-input required email" title="" />
+                                </li>
+                                <li class="form-row text-area-row">
+                                    <textarea name="message" class="text-area required" style="height:80px;"></textarea>
+                                </li>
+                                <li class="form-row hidden-row">
+                                    <input type="hidden" name="hidden" value="" />
+                                </li>
+                                <li class="button-row">
+                                    <input type="submit" value="Gönder" name="submit" class="btn-submit" />
+                                </li>
+                            </ol>
+                            <input type="hidden" name="v_error" id="v-error" value="Required" />
+                            <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+                        </fieldset>
+                    </form>
+                    <div class="response"></div>
+                </div>
+                <!-- End Form -->
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!-- End Container -->
+
+        <div id="copyright" class="opacity">
+            <p>© 2021 Asp.Net ile hazırlanmıştır.</p>
+        </div>
+
+
+        <!-- End Wrapper -->
+
+        <script type="text/javascript" src="~/style/js/scripts.js"></script>
+</body>
+</html>
